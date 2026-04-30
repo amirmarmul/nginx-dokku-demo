@@ -3,23 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dokku Deployment Demo</title>
+    <title>Nginx App</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-50 flex flex-col min-h-screen">
+<body class="bg-white min-h-screen flex flex-col items-center justify-center text-gray-900 font-sans">
 
-    <main class="flex-grow flex items-center justify-center">
-        <div class="max-w-md w-full bg-white p-8 rounded-xl border border-gray-200 shadow-sm">
-            <h1 class="text-2xl font-bold text-gray-900 mb-2">Dokku Deployment</h1>
-            <p class="text-gray-600 mb-6">Demo aplikasi statis yang dideploy secara otomatis dengan GitHub Actions.</p>
-            <div class="bg-gray-100 p-4 rounded-lg">
-                <p class="text-sm text-gray-500">Status: <span class="text-green-600 font-semibold">Live & Active</span></p>
-            </div>
-        </div>
+    <main class="flex-grow flex flex-col items-center justify-center p-6 text-center">
+        <h1 class="text-4xl font-extrabold tracking-tight mb-4">Nginx App</h1>
+        <p class="text-lg text-gray-500 max-w-lg">
+            This static site is running on Dokku.
+        </p>
     </main>
 
-    <footer class="text-center p-6 text-gray-400 text-sm">
-        <p>App Version: <span class="font-mono">v1.0.0</span></p>
+    <footer class="p-6 text-gray-400 text-sm text-center">
+        <p>Deployed with GitHub Actions</p>
     </footer>
 
 </body>
