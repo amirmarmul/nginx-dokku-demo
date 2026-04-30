@@ -22,10 +22,10 @@ git commit -m "Initial commit"
 
 ### 2. Configure Dokku Remote
 
-Replace `your-dokku-server.com` with your server's domain/IP and `myapp` with your desired application name.
+Replace `your-dokku-server.com` with your server's domain/IP and `nginx-app` with your desired application name.
 
 ```bash
-git remote add dokku dokku@your-dokku-server.com:myapp
+git remote add dokku dokku@your-dokku-server.com:nginx-app
 ```
 
 ### 3. Create the App on Dokku
@@ -34,7 +34,7 @@ Connect to your server via SSH and create the app:
 
 ```bash
 ssh root@your-dokku-server.com
-dokku apps:create myapp
+dokku apps:create nginx-app
 ```
 
 ### 4. Deploy to Dokku
@@ -50,7 +50,7 @@ git push dokku main
 Once the deployment finishes, Dokku will provide a URL for your application. You can also view it by running:
 
 ```bash
-dokku urls myapp
+dokku urls nginx-app
 ```
 
 ## How it works
