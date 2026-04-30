@@ -17,3 +17,5 @@ jobs:
         with:
           git_remote_url: 'ssh://dokku@${{ secrets.DOKKU_HOST }}/nginx-app'
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          # If you want to skip host key verification (less secure, but easier for simple setups)
+          ssh_skip_verify: 'true'
